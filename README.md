@@ -39,9 +39,9 @@ The RID Comparison App is a standalone console application designed to compile a
 
 ## Example Directory Structure
 RidComparisonApp (folder)
-├── RidComparisonApp.exe
-├── rids
-│ ├── file1.mtl
-│ ├── file2.mtl
-│ └── file3.mtl
-└── RidData.xlsx
+<br> ├── RidComparisonApp.exe
+<br> ├── rids
+<br> │ ├── file1.mtl
+<br> │ ├── file2.mtl
+<br> │ └── file3.mtl
+<br> └── RidData.xlsx
