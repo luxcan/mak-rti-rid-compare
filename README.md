@@ -1,12 +1,24 @@
 # RID Comparison App
 
-The RID Comparison App is a standalone console application designed to compile and compare multiple [MAK](https://www.mak.com/) RTI rid files (`.mtl`) into a single Excel report. This tool reads the configuration data from these files and generates a comprehensive Excel spreadsheet that lists the configuration names along with their corresponding values from each file.
+The RID Comparison App is a standalone console application designed to compile and compare multiple [MAK](https://www.mak.com/) RTI rid files (`.mtl`) into a single Excel report. This tool reads the configuration data from these files and generates a comprehensive Excel spreadsheet that lists the configuration names along with their corresponding values from each file. Configurations whose values differ between files are highlighted in **pink** so the differences are easy to spot.
 
 ## Prerequisites
 
-- **Operating System**: Windows 10 or later.
-- **.NET Runtime**: The app is self-contained, so you do not need to install .NET separately.
+- **Operating System**: Windows 10 or later (64-bit).
+- **.NET Runtime**: None required. The app is published as a self-contained, single-file executable that bundles the .NET 10 runtime, so it runs without installing .NET separately.
 - **Excel Viewer**: To view the generated Excel file, you will need Microsoft Excel or another compatible viewer.
+
+## Building from Source
+
+If you want to build the app yourself, you need the **.NET 10 SDK** installed. From the project folder, run:
+
+```
+dotnet publish -c Release
+```
+
+This produces the self-contained, single-file `MAKRtiRidCompare.exe` under
+`bin\Release\net10.0\win-x64\publish\`. Copy that `.exe` to any Windows machine
+and run it as described below — no .NET installation needed on the target.
 
 ## Setup
 
